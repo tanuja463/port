@@ -1,0 +1,207 @@
+/* ==============================
+   RESPONSIVE MEDIA QUERIES
+================================ */
+
+@media screen and (max-width:1680px){
+    .welcome-hero { height: 900px; }
+}
+
+/* -------------------------------- */
+@media screen and (max-width:1440px){
+	.single-about-img img { max-width:100%; }
+	.single-about-img:before,
+    .about-list-icon { width: 100%; }
+}
+
+/* -------------------------------- */
+@media screen and (max-width:1199px){
+	nav.navbar.bootsnav ul.nav > li > a { padding: 30px 8px; }
+
+	.welcome-hero { height: 768px; }
+
+	.timeline-content span>i,
+    .experience-time span>i {
+        left: -12%;
+    }
+
+    /* EXPERIENCE BOX SAME HEIGHT */
+    .single-experience-box {
+        min-height: 320px;
+    }
+}
+
+/* -------------------------------- */
+@media screen and (max-width:1024px){
+    .header-text h2 { font-size: 42px; }
+}
+
+/* -------------------------------- */
+@media screen and (max-width:1008px){
+	nav.navbar.bootsnav ul.nav > li.dropdown span.megamenu-title {
+        display:block;
+        color: #43465d;
+        font-size: 18px;
+    }
+
+	nav.navbar.bootsnav ul.dropdown-menu.megamenu-content 
+    .content ul.menu-col li .megamenu-sub-title a {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+	nav.navbar.bootsnav ul.dropdown-menu.megamenu-content 
+    .content ul.menu-col li .megamenu-sub-txt a {
+        margin-bottom: 15px;
+    }
+}
+
+/* -------------------------------- */
+@media screen and (max-width:992px){
+	nav.navbar.bootsnav .navbar-collapse.collapse.in {
+        padding-bottom: 30px;
+    }
+
+	nav.navbar.bootsnav .navbar-toggle {
+        display: inline-block;
+        float: right;
+        margin-top: 21px;
+    }
+
+	nav.navbar.bootsnav .navbar-brand {
+        float: left!important;
+    }
+
+	nav.navbar.bootsnav ul.nav > li > a {
+        padding: 12px 0;
+    }
+}
+
+/* -------------------------------- */
+@media screen and (max-width:991px){
+	.experience-time-responsive { display: block; }
+	.experience-time-main { display: none; }
+
+	.experience-time,
+    .timeline-content {
+        text-align: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+
+	.timeline-content span>i {
+        left: 0;
+        top: -40%;
+    }
+
+	.experience-time span>i {
+        left: -5%;
+        top: 5%;
+    }
+
+	.main-timeline:before {
+        left: 1%;
+    }
+
+	.single-horizontal-timeline 
+    .experience-time,
+    .single-horizontal-timeline 
+    .timeline-content {
+        margin: 0;
+    }
+}
+
+/* -------------------------------- */
+@media screen and (max-width:768px){
+    .header-text h2 { font-size: 32px; }
+    .header-text p { font-size: 16px; }
+}
+
+/* -------------------------------- */
+@media screen and (max-width:767px){
+	.single-about-img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto 30px;
+    }
+
+	.experience-time span>i,
+    .timeline-content span>i,
+    .main-timeline:before {
+        display: none;
+    }
+
+	.experience-time,
+    .timeline-content {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    /* EXPERIENCE BOX FULL WIDTH */
+    .single-experience-box {
+        min-height: auto;
+        text-align: center;
+    }
+
+	.isotope .item {
+        max-width: 350px;
+        margin: 0 auto 30px;
+    }
+
+	.single-profile {
+        max-width: 350px;
+        margin: 30px auto;
+        border: 0;
+    }
+
+	.profile-border { border: 0; }
+
+	.single-horizontal-timeline {
+        max-width: 350px;
+        margin: 30px auto;
+    }
+}
+
+/* -------------------------------- */
+@media screen and (max-width:660px){
+    .welcome-hero { height: 550px; }
+}
+
+/* -------------------------------- */
+@media screen and (max-width:640px){
+    .header-text h2 { font-size: 28px; }
+}
+
+/* -------------------------------- */
+@media screen and (max-width:580px){
+    .header-text p { font-size: 14px; }
+}
+
+/* -------------------------------- */
+@media screen and (max-width:540px){
+	.subscribe-title h2 { font-size: 22px; }
+}
+
+/* -------------------------------- */
+@media screen and (max-width:480px){
+    .header-text a {
+        width: 150px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 14px;
+    }
+}
+
+/* -------------------------------- */
+@media screen and (max-width:440px){
+    .header-text h2 { font-size: 24px; }
+}
+
+/* -------------------------------- */
+@media screen and (max-width:350px){
+    body { font-size: 13px; }
+}
+
+/* -------------------------------- */
+@media screen and (max-width:320px){
+    .header-text h2 { font-size: 22px; }
+}
