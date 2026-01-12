@@ -44,7 +44,7 @@
 	<!--responsive.css-->
 	<link rel="stylesheet" href="assets/css/responsive.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-	
+
 
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -83,7 +83,7 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse " id="navbar-menu">
 						<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-							<li class="smooth-menu"><a href="#about me">About me</a></li>
+							<li class="smooth-menu"><a href="#about">About me</a></li>
 							<li class="smooth-menu"><a href="#education">Education</a></li>
 							<li class="smooth-menu"><a href="#skills">Skills</a></li>
 							<li class="smooth-menu"><a href="#experience">Experience</a></li>
@@ -451,8 +451,8 @@
 	<!-- team start -->
 	<section id="team" class="team">
 		<div class="team-details ">
-			<div class="section-heading text-center header-text h2">
-				<h1>Our Team</h1>
+			<div class="section-heading text-center ">
+				<h2>Our Team</h2>
 			</div>
 			<div class="container">
 				<div class="row">
@@ -741,6 +741,24 @@
 
 	<!--Custom JS-->
 	<script src="assets/js/custom.js"></script>
+	<script>
+		$(document).ready(function () {
+
+			$('.smooth-menu a').on('click', function (event) {
+				event.preventDefault();
+
+				var target = $(this).attr('href');
+
+				if ($(target).length) {
+					$('html, body').animate({
+						scrollTop: $(target).offset().top - 70
+					}, 800, 'easeInOutExpo');
+				}
+			});
+
+		});
+	</script>
+
 
 </body>
 
